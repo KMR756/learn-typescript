@@ -43,6 +43,9 @@ var person2 = {
     skills: ["react", "node", "html", "css"],
     product: [10, "mackbook pro m2", 120000],
 };
+// person2.product[1]= 30;    //not valid , cant assign string value as a number
+person2.product[0] = 20;
+// person2.product= [10, "mackbook pro m2", 120000, "fevourite"]    //not valid
 console.log(person2);
 console.log(person2.product[0]);
 console.log(person2.product[1]);
