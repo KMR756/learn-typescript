@@ -71,3 +71,34 @@ console.log(person2);
 console.log(person2.product[0]);
 console.log(person2.product[1]);
 console.log(person2.product[2]);
+
+//
+//
+//______________________________________________________
+// Enum
+
+enum Role {
+  ADMIN,
+  USER,
+  AUTHOR,
+}
+
+const person3: {
+  name: string;
+  age: number;
+  skils: string[];
+  role: Role;
+} = {
+  name: "rahat",
+  age: 23,
+  skils: ["react", "node", "HTML"],
+  role: Role.ADMIN,
+};
+
+if (person3.role === Role.ADMIN) {
+  console.log("ADMIN");
+} else if (person3.role === Role.AUTHOR) {
+  console.log("AUTHOR");
+} else if (person3.role === Role.USER) {
+  console.log("USER");
+}

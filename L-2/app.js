@@ -50,3 +50,28 @@ console.log(person2);
 console.log(person2.product[0]);
 console.log(person2.product[1]);
 console.log(person2.product[2]);
+//
+//
+//______________________________________________________
+// Enum
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["USER"] = 1] = "USER";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
+var person3 = {
+    name: "rahat",
+    age: 23,
+    skils: ["react", "node", "HTML"],
+    role: Role.ADMIN,
+};
+if (person3.role === Role.ADMIN) {
+    console.log("ADMIN");
+}
+else if (person3.role === Role.AUTHOR) {
+    console.log("AUTHOR");
+}
+else if (person3.role === Role.USER) {
+    console.log("USER");
+}
