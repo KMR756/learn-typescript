@@ -47,3 +47,24 @@ console.log(myFavouriteLanguage1[1]);
 console.log(myFavouriteLanguage2);
 console.log(myFavouriteLanguage2[2]);
 console.log(myFavouriteLanguage2[3]);
+
+//
+//
+//______________________________________________________
+// tuple : fixed array of many types
+const person2: {
+  name: string;
+  age: number;
+  skills: string[];
+  product: [number, string, number];
+} = {
+  name: "Rahat khan",
+  age: 27,
+  skills: ["react", "node", "html", "css"],
+  product: [10, "mackbook pro m2", 120000],
+};
+
+console.log(person2);
+console.log(person2.product[0]);
+console.log(person2.product[1]);
+console.log(person2.product[2]);

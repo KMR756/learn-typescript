@@ -4,15 +4,15 @@
 //______________________________________________________
 // object and array
 var person = {
-  name: "rahat Khan",
-  age: 29,
-  isDeveloper: true,
-  address: {
-    road: "Mirpur",
-    district: "dhaka",
-  },
-  skills: ["reactJs", "nodeJs", "HTML", "CSS"],
-  marks: [1, 2, 345, 655, 34],
+    name: "rahat Khan",
+    age: 29,
+    isDeveloper: true,
+    address: {
+        road: "Mirpur",
+        district: "dhaka",
+    },
+    skills: ["reactJs", "nodeJs", "HTML", "CSS"],
+    marks: [1, 2, 345, 655, 34],
 };
 var myFavouriteLanguage1;
 myFavouriteLanguage1 = ["bangla", "english"];
@@ -33,3 +33,17 @@ console.log(myFavouriteLanguage1[1]);
 console.log(myFavouriteLanguage2);
 console.log(myFavouriteLanguage2[2]);
 console.log(myFavouriteLanguage2[3]);
+//
+//
+//______________________________________________________
+// tuple : fixed array of many types
+var person2 = {
+    name: "Rahat khan",
+    age: 27,
+    skills: ["react", "node", "html", "css"],
+    product: [10, "mackbook pro m2", 120000],
+};
+console.log(person2);
+console.log(person2.product[0]);
+console.log(person2.product[1]);
+console.log(person2.product[2]);
