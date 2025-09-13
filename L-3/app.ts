@@ -37,6 +37,29 @@ function combine2(
 const sum2 = combine2(20, 10, "as-number");
 const sum3 = combine2("20", 20, "as-number");
 const combineName2 = combine2("Rahat", "khan", "as-string");
-console.log(sum2, sum3, combineName2);
+// console.log(sum2, sum3, combineName2);
 
 // type alias | custom type
+type Combinable = number | string;
+type ConversionType = "as-number" | "as-string";
+function combine3(
+  value1: Combinable,
+  value2: Combinable,
+  conversionType: ConversionType
+) {
+  let result;
+  if (
+    (typeof value1 === "number" && typeof value2 === "number") ||
+    conversionType === "as-number"
+  ) {
+    result = +value1 + +value2;
+  } else {
+    result = value1.toString() + " " + value2.toString();
+  }
+  return result;
+}
+
+const sum4 = combine3(12, 23, "as-number");
+const sum5 = combine3("12", 23, "as-number");
+const combineName3 = combine3("rahat", "khan", "as-string");
+console.log(sum4, sum5, combineName3);
