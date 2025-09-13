@@ -82,3 +82,9 @@ const user: User = {
 };
 
 console.log(user);
+
+function greet(user: User) {
+  console.log(`hello!! ${user.name}`);
+}
+
+greet(user);

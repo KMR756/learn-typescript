@@ -51,3 +51,7 @@ var user = {
     skills: ["react", "node"],
 };
 console.log(user);
+function greet(user) {
+    console.log("hello!! ".concat(user.name));
+}
+greet(user);
