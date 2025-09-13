@@ -45,3 +45,9 @@ var sum4 = combine3(12, 23, "as-number");
 var sum5 = combine3("12", 23, "as-number");
 var combineName3 = combine3("rahat", "khan", "as-string");
 console.log(sum4, sum5, combineName3);
+var user = {
+    name: "rahat",
+    age: 24,
+    skills: ["react", "node"],
+};
+console.log(user);

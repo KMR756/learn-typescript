@@ -38,7 +38,8 @@ const sum2 = combine2(20, 10, "as-number");
 const sum3 = combine2("20", 20, "as-number");
 const combineName2 = combine2("Rahat", "khan", "as-string");
 // console.log(sum2, sum3, combineName2);
-
+//
+// ____________________________________________________________
 // type alias | custom type
 type Combinable = number | string;
 type ConversionType = "as-number" | "as-string";
@@ -63,3 +64,21 @@ const sum4 = combine3(12, 23, "as-number");
 const sum5 = combine3("12", 23, "as-number");
 const combineName3 = combine3("rahat", "khan", "as-string");
 console.log(sum4, sum5, combineName3);
+
+//
+// ____________________________________________________________
+// custom type
+
+type User = {
+  name: string;
+  age: number;
+  skills: string[];
+};
+
+const user: User = {
+  name: "rahat",
+  age: 24,
+  skills: ["react", "node"],
+};
+
+console.log(user);
