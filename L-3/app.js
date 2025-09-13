@@ -11,6 +11,24 @@ function combine(num1, num2) {
 }
 var sum = combine(12, 23);
 var combineName = combine("rahat", "khan");
-console.log(sum, combineName);
+// console.log(sum, combineName);
+//
+//
+// ____________________________________________________________
 // literal type
+function combine2(num3, num4, conversionType) {
+    var result;
+    if ((typeof num3 === "number" && typeof num4 === "number") ||
+        conversionType === "as-number") {
+        result = +num3 + +num4;
+    }
+    else {
+        result = num3.toString() + " " + num4.toString();
+    }
+    return result;
+}
+var sum2 = combine2(20, 10, "as-number");
+var sum3 = combine2("20", 20, "as-number");
+var combineName2 = combine2("Rahat", "khan", "as-string");
+console.log(sum2, sum3, combineName2);
 // type alias | custom type
