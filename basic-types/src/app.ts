@@ -29,34 +29,34 @@
 // console.log(student);
 
 
-// any typs : not recomented
-let ramdomValue:any = "hello";
-// ramdomValue=12
-// ramdomValue=false
-console.log(ramdomValue.trim());
+// // any typs : not recomented
+// let ramdomValue:any = "hello";
+// // ramdomValue=12
+// // ramdomValue=false
+// console.log(ramdomValue.trim());
 
 
-let unknowValue:unknown = "rahat"
+// let unknowValue:unknown = "rahat"
 
-if (typeof unknowValue === "string") {
-  console.log(unknowValue.toUpperCase()); // ✔ safe
-}
+// if (typeof unknowValue === "string") {
+//   console.log(unknowValue.toUpperCase()); // ✔ safe
+// }
 
-// void
-function sentHello (a:number,b:number):void{
+// // void
+// function sentHello (a:number,b:number):void{
   
-  console.log(`sum: ${a+b}`);
+//   console.log(`sum: ${a+b}`);
   
    
     
-}
-sentHello(12,12)
+// }
+// sentHello(12,12)
 
 
-// null : no value no define || and undefind : define but not assign 
-const nullValue :null = null;
-const undefineValue :undefined = undefined
+// // null : no value no define || and undefind : define but not assign 
+// const nullValue :null = null;
+// const undefineValue :undefined = undefined
 
 
-console.log(nullValue,undefineValue);
+// console.log(nullValue,undefineValue);
 
